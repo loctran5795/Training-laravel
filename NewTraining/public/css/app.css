@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.page {
+  background: url("/images/3.jpeg");
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page .loginBox {
+  width: 450px;
+  background: rgba(168, 166, 166, 0.5);
+  box-sizing: border-box;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.page .loginBox h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #1b5341;
+}
+
+.page .loginBox .formLogin {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  height: 20px;
+  color: #fff;
+  font-size: 16px;
+  background: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.page .loginBox label {
+  font-size: 20px;
+}
+
+.page .loginBox button {
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #008C5E;
+  font-size: 24px;
+  padding: 5px 20px;
+}
+
+.page .loginBox .invalid {
+  color: red;
+}
+
+.page .loginBox .create {
+  text-align: center;
+}
+
+.page .loginBox .create a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.page .loginBox .create h4 {
+  color: snow;
+}
+
+.headerCntr {
+  border-bottom: 1px solid #ccc;
+  background: #ffeeba;
+}
+
+.headerCntr .headerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* overflow: hidden; */
+}
+
+.headerCntr .headerBox .logo {
+  width: 200px;
+}
+
+.headerCntr .headerBox .logo img {
+  max-width: 100%;
+}
+
+.headerCntr .actionsBox .button {
+  background: #83C75D;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.headerCntr .actionsBox .button:hover {
+  background: #509c23;
+}
+
+.headerCntr .actionsBox {
+  display: flex;
+}
+
+.headerCntr .actionsBox .dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 2;
+  color: red;
+}
+
+.headerCntr .actionsBox .dropdown-content {
+  display: none;
+  position: absolute;
+  border: 1px solid #fff;
+  background: #fff;
+  list-style: none;
+  top: 50px;
+  right: 0px;
+  padding: 0;
+  border-radius: 5px;
+  width: 340px;
+  z-index: 99;
+  box-shadow: -2px 3px 5px #ccc;
+}
+
+.headerCntr .actionsBox .dropdown:hover {
+  cursor: pointer;
+  display: block;
+  color: #008C5E;
+}
+
+.headerCntr .actionsBox .dropdown:hover > .dropdown-content,
+.headerCntr .actionsBox .dropdown-content:hover {
+  display: block;
+}
+
+.headerCntr .actionsBox .dropdown-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.headerCntr .actionsBox .dropdown-content ul li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.headerCntr .actionsBox .dropdown-content ul a {
+  text-decoration: none;
+  color: #008C5E;
+  padding-bottom: 10px;
+}
+
+.headerCntr .actionsBox .dropdown-content ul button {
+  background: #83C75D;
+  color: #fff;
+  font-size: 24px;
+  padding: 0px 30px;
+  border-radius: 5px;
+}
+
+.headerCntr .actionsBox img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.headerCntr .actionsBox span {
+  font-size: 40px;
+  color: #83C75D;
+}
+
+.footerCntr {
+  background: #1c1c1c;
+}
+
+.footerCntr .footerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.footerCntr .footerBox .termBox ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerCntr .footerBox .termBox ul li {
+  padding-left: 5px;
+}
+
+.footerCntr .footerBox .termBox ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.postBox {
+  max-width: 400px;
+  margin: auto;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background: #F0FFFF;
+  max-height: 700px;
+  padding: 50px 50px;
+}
+
+.postBox .formBox {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  height: 20px;
+  color: black;
+  font-size: 16px;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.postBox .area {
+  width: 100%;
+  border-radius: 10px;
+  min-height: 150px;
+}
+
+.postBox .button {
+  background: #83C75D;
+  padding: 4px 130px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
