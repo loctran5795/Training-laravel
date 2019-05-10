@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    
+}
+.centered {
+    padding-left: calc(( 100vw - 1200px)/2);
+    padding-right: calc(( 100vw - 1200px)/2);
+}
+
+/* Header */
+.headerCntr {
+    border-bottom: 1px solid #ccc;
+    background: #ffeeba;
+}
+
+.headerCntr .headerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* overflow: hidden; */
+}
+
+.headerCntr .headerBox .logo {
+    width: 200px;
+}
+
+.headerCntr .headerBox .logo img {
+    max-width: 100%;
+}
+
+.headerCntr .actionsBox .button {
+    background: #83C75D;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.headerCntr .actionsBox .button:hover {
+    background: rgb(80, 156, 35);
+    
+}
+
+.headerCntr .actionsBox {
+    display: flex;
+    
+}
+
+.headerCntr .actionsBox .dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 2; 
+    color: red;
+}
+
+.headerCntr .actionsBox .dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid #fff;
+    background: #fff;
+    list-style: none;
+    top: 50px;
+    right: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 290px;
+    z-index: 99;
+}
+
+.headerCntr .actionsBox .dropdown:hover {
+    cursor: pointer;
+    display: block;
+    color: #008C5E;
+}
+
+.headerCntr .actionsBox .dropdown:hover > .dropdown-content,
+.headerCntr .actionsBox .dropdown-content:hover {
+    display: block;
+}
+
+.headerCntr .actionsBox .dropdown-content ul {
+    list-style: none;
+    padding-right: 40px;
+}
+
+.headerCntr .actionsBox .dropdown-content ul a {
+    text-decoration: none;
+    color: #008C5E;
+    padding-bottom: 10px;
+
+}
+
+.headerCntr .actionsBox img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.headerCntr .actionsBox span {
+    font-size: 40px;
+    color: #83C75D;
+}
+
+/* .headerCntr .actionsBox .dropdown:hover .headerCntr .actionsBox .dropdown-content {
+    display: block;
+} */
+
+/*body-content*/
+.postBox {
+    max-width: 400px;
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background: #F0FFFF;
+    max-height: 700px;
+    padding: 50px 50px;
+}
+.postBox .formBox {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    height: 20px;
+    color:black;
+    font-size: 16px;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.postBox .area {
+    width: 100%;
+    border-radius: 10px;
+    min-height: 150px;
+}
+
+.postBox .button {
+    background: #83C75D;
+    padding: 4px 130px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.postChild {
+    width: 100%;
+}
+.authPage {
+    background-image: url('/images/image1.jpeg');
+    min-height: 1000px;
+    width: 100%;
+    background-size: cover;
+}
+
+.loginBox {
+    background: rgba(162, 181, 205, 0.8);
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    box-sizing: border-box;
+    padding: 50px 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+                                                                               
+
+.content .loginBox h2 {
+    font-weight: 600;
+    color: #008C5E;
+    text-align: center;
+}
+.content .loginBox .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    height: 20px;
+    color: #fff;
+    font-size:16px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.content .loginBox .button {
+    width: 50%;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    background: #83C75D;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+}
+.content .loginBox .button:hover {
+    cursor: pointer;
+    background: rgb(89, 224, 10);
+}
+
+.content .loginBox .container {
+    padding-bottom: 16px;
+}
+
+.post_parent {
+    display: flex;
+}
+
+.newPost {
+    max-width: 33.3%;
+    display: flex;
+
+}
+
+.post_parent .newPost img {
+    width: 100%;
+    height: 500px;
+}
+
+/* .content .loginBox .container .radio {
+    position: absolute;
+} */
+
+/* Footer */
+.footerCntr {
+    background: #1c1c1c;
+}
+.footerCntr .footerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.footerCntr .footerBox .termBox ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.footerCntr .footerBox .termBox ul li {
+    padding-left: 5px;
+}
+
+.footerCntr .footerBox .termBox ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* style body content */
+.image {
+    background-image: url('/tex/images/pexels-photo-1382734.jpeg');
+    background-repeat: no-repeat;
+}
+.image-first {
+    background-image: url('/tex/images/pexels-photo-132472.jpeg');
+}
+.a {
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* contentPost */
+.title {
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+.imagePost {
+    display: flex;
+    justify-content: center;
+}
+
+.imagePost img{
+    max-height: 350px;
+    width: 100%;
+    
+}
+.like {
+    display: flex;
+    justify-content: center;
+}
+.comment form {
+    display: flex;
+    justify-content: center;
+}
+.imageComment img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%
+}
+.contentBox {
+    background: rgba(162, 181, 205, 0.8);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
