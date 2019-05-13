@@ -185,6 +185,42 @@ body {
   color: #83C75D;
 }
 
+.Parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Parent .Chirld {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #008C5E;
+}
+
+.Parent .Con:nth-child(odd) {
+  background: #fff;
+}
+
+.Parent .Con:nth-child(even) {
+  background: red;
+}
+
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background: #ccc;
+}
+
 .footerCntr {
   background: #1c1c1c;
 }

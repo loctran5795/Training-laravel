@@ -8,10 +8,10 @@
     @endif
 
 
-    <div>
+    <div class="Parent">
+        <img src="{{ $post->image_post }}" style="width:400px" alt="123">
         <h2>Title: {{ $post->title }} </h2>
         <p>Content: {{ $post->content }} </p>
-        <img src="{{ $post->image_post }}" style="width:400px" alt="">
         <br>
         <a href="{{ route('post.changeLike', $post) }}"><i style="font-size: 50px;" class="far fa-thumbs-up"></i></a>
         {{-- <form action="{{ route('post.changeLike', $post) }}" method="GET">

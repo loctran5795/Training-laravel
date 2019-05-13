@@ -49,4 +49,6 @@ Route::post('/update', 'UserController@updateFile')->name('user.update');
 Route::get('/change', 'UserController@change')->name('change.index');
 Route::post('/change', 'UserController@changePassword')->name('user.change');
 
+Route::get('/{post}/delete', 'DeleteController@destroy')->name('post.destroy');
+
 

@@ -12,11 +12,14 @@
         @csrf
         <but`ton type="submit">test</button>
     </form> --}}
-
-    <form action="{{ route('contact') }}" method="POST">
-        @csrf
-        <button type="submit">click</button>
-    </form>
+    <div class="postBox">
+        <form action="{{ route('contact') }}" method="POST">
+            @csrf
+            <label for="">content</label>
+            <textarea class="area" type="text" row="5" name="content" placehoder="comment"></textarea>
+            <button type="submit">click</button>
+        </form>
+    </div>
 
    
     {{-- <div class="postBox">
@@ -133,16 +136,25 @@
         </form>
     </div> --}}
 
-    <div>
+    <div class="Parent">
         @foreach ($posts as $post)
-            <a href="{{ route('post.show', $post) }}" target="_blank"><p>Title: {{ $post->title }} </p></a>
-            {{--  <p.>Content: {{ $post->content }} </p>  --}}
-            <img src="{{ $post->image_post }}" style="width:400px" alt="">
-            {{--  <form action="{{ route('user.comment', $post) }}" method="GET">
-                @csrf
-                <input type="text" name="content">
-                <button type="submit">comment</button>
-            </form>  --}}
+        <div class="col-6 m-auto Con">
+            <div class="row Chirld">
+                <div class="col-6">
+                    <a href="{{ route('post.show', $post) }}" target="_blank"><p>Title: {{ $post->title }} </p></a>
+                    {{--  <p.>Content: {{ $post->content }} </p>  --}}
+                </div>
+                <div class="col-6">
+                    <img src="{{ $post->image_post }}" style="max-width:200px; height: 150px;" alt="">
+                    {{--  <form action="{{ route('user.comment', $post) }}" method="GET">
+                        @csrf
+                        <input type="text" name="content">
+                        <button type="submit">comment</button>
+                    </form>  --}}
+                </div>
+            </div>
+        </div>
+        <hr>
         @endforeach
     </div>
     

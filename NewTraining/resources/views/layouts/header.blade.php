@@ -30,9 +30,9 @@
                 <i class="dropdown fas fa-chevron-circle-down">
                     <div class="dropdown-content">
                         <ul>
-                            <li><a href="http://localhost:8000/post">Post</a></li>
-                            <li><a href="http://localhost:8000/update">Update Information</a></li>
-                            <li><a href="http://localhost:8000/change">Change Password</a></li>                                
+                            <li><a href="{{ route('post.index') }}">Post</a></li>
+                            <li><a href="{{ route('update.index') }}">Update Information</a></li>
+                            <li><a href="{{ route('change.index') }}">Change Password</a></li>                                
                             <li>
                                 <form action="{{ route('logout') }}" method="POST">
                                     @csrf
